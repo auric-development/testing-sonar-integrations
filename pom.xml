@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.auric.techops</groupId>
-    <artifactId>auric-api</artifactId>
+    <artifactId>testing-sonar-integrations</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>auric-api</name>
+    <name>testing-sonar-integrations</name>
     <description>Auric API</description>
     <properties>
         <java.version>18</java.version>
@@ -51,17 +51,6 @@
             <version>9.11.0</version>
         </dependency>
         <dependency>
-            <groupId>software.amazon.awssdk</groupId>
-            <artifactId>aws-sdk-java</artifactId>
-            <version>2.19.26</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk-polly</artifactId>
-            <version>1.12.395</version>
-        </dependency>
-        <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
@@ -75,11 +64,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk-location</artifactId>
-            <version>1.12.395</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -119,30 +103,30 @@
             </plugin>
 
             <!-- JaCoCo code coverage plugin -->
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.8</version>
-                <configuration>
-                    <excludes>
-                        <exclude>com/auric/techops/starter/TechOpsApplication.class</exclude>
-                    </excludes>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.jacoco</groupId>-->
+<!--                <artifactId>jacoco-maven-plugin</artifactId>-->
+<!--                <version>0.8.8</version>-->
+<!--                <configuration>-->
+<!--                    <excludes>-->
+<!--                        <exclude>com/auric/techops/starter/TechOpsApplication.class</exclude>-->
+<!--                    </excludes>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>prepare-agent</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                    <execution>-->
+<!--                        <id>report</id>-->
+<!--                        <phase>test</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>report</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
             <!-- end Jacoco -->
 
         </plugins>
@@ -152,11 +136,10 @@
 <!--                <plugin>-->
 <!--                    <groupId>org.sonarsource.scanner.maven</groupId>-->
 <!--                    <artifactId>sonar-maven-plugin</artifactId>-->
-<!--                    <version>3.9.1</version>-->
+<!--                    <version>3.9.1.2184</version>-->
 <!--                </plugin>-->
 <!--            </plugins>-->
 <!--        </pluginManagement>-->
-        <!-- end Sonar -->
 
     </build>
 
