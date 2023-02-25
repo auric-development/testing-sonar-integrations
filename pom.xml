@@ -14,7 +14,7 @@
     <name>testing-sonar-integrations</name>
     <description>Auric API</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>18</java.version>
         <sonar.organization>auric-development</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
