@@ -9,4 +9,8 @@ public class TechOpsApplication {
         SpringApplication.run(TechOpsApplication.class, args);
     }
 
+    public void testmethod() {
+        System.out.println("test");
+    }
+
 }
