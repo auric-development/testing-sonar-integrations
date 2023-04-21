@@ -1,0 +1,6 @@
+[default]
+client_secret = mUqNCq5QaTZmWlooGLJrrxOpbm5AbHKaxTtbJtYbog8=
+host = akab-2zhsdc2fdqntbmg3-vzein6xkdr3zke2b.luna.akamaiapis.net
+access_token = akab-j5ce7pcstanxpqya-oeo3plccnf56rlpw
+client_token = akab-zrvx2y6vl5bjbkyc-thzuaoaxbqgkghwm
+max-body = 131072
